@@ -17,8 +17,7 @@ if (env === 'development') {
 const config: Appconfig = {
   port: process.env.PORT || 8001,
   mongoUrl:
-    process.env.MONGO_URL ||
-    'mongodb+srv://rubiontechio:mampallil@shopfrombio-dev.q1h9x.mongodb.net/shopformbio-dev?retryWrites=true&w=majority',
+    process.env.MONGO_URL,
   jwt: {
     secret: process.env.JWT_SECRET || 'dfdfdfdeeeee',
     accessSecret: process.env.JWT_ACCESS_SECRET || 'asdfertgfrg',
